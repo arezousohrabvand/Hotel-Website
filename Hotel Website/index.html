@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" media="screen">
 
+
   <style>
 .image{
   position: relative;
@@ -39,44 +40,61 @@
     outline: 3px solid white;
     outline-offset: -50px;
   }
+  @media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
 
   </style>
 </head>
 <body id="home">
   <header>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active" >Home</a></li>
-      <li><a href="festiveevents.html" >Festive Events</a>
-        <ul>
-          <li><a href="nutcrackerafternoontea.html" >Nutcracker Afternoon Tea</a></li>
-          <li><a href="festivalholidaybuffet.html" >Festival Holiday Buffet</a></li>
-          <li><a href="ukrainianchristmas.html">Ukrainian Christmas</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html" >About</a></li>
-      <li><a href="hotel.html" >Hotel</a>
-        <ul>
-          <li><a href="accomodation.html" >Accomodation</a></li>
-          <li><a href="breakfast.html" >breakfast</a></li>
-        </ul>
-      </li>
-      <li><a href="dining.html" >Dining</a>
-       <ul>
-         <li><a href="diningroommenus.html" >Dining Room Menus</a></li>
-         <li><a href="afternoontea.html" >Afternoon Tea</a></li>
-       </ul>
-     </li>
-      <li><a href="spa.html" >Spa</a>
-      <ul>
-        <li><a href="spaservices.html" >Spa Services</a></li>
-        <li><a href="spapackages.html" >Spa Packages</a></li>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+<ul class="navbar-nav">
+	<li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
+	<li class="nav-item"><a class="nav-link" href="about.html" > About </a></li>
+	<li class="nav-item"><a class="nav-link"  href="contact.html" >Contact</a></li>
+	<li class="nav-item dropdown">
+	   <a class="nav-link  dropdown-toggle" href="festiveevents.html" data-toggle="dropdown"> Festive Events  </a>
+	    <ul class="dropdown-menu">
+		    <li><a class="dropdown-item"href="nutcrackerafternoontea.html" > Nutcracker Afternoon Tea</a></li>
+		    <li><a class="dropdown-item" href="festivalholidaybuffet.html"> Festival Holiday Buffet </a></li>
+        <li><a class="dropdown-item" href="ukrainianchristmas.html"> Ukrainian Christmas </a></li>
       </ul>
-    </li>
-      <li><a href="contact.html" >Contact</a></li>
-    </ul>
-    </nav>
+	</li>
+  <li class="nav-item dropdown">
+     <a class="nav-link  dropdown-toggle" href="hotel.html" data-toggle="dropdown"> Hotel </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="accomodation.html" >Accomodation</a></li>
+        <li><a class="dropdown-item" href="breakfast.html" >breakfast </a></li>
+      </ul>
+  </li>
+  <li class="nav-item dropdown">
+     <a class="nav-link  dropdown-toggle" href="dining.html" data-toggle="dropdown"> Dinnig</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="diningroommenus.html" >Dining Room Menus</a></li>
+        <li><a class="dropdown-item" href="afternoontea.html" >Afternoon Tea</a></li>
+      </ul>
+  </li>
+  <li class="nav-item dropdown">
+     <a class="nav-link  dropdown-toggle" href="spa.html" data-toggle="dropdown"> Spa</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="spaservices.html" >Spa Services</a></li>
+        <li><a class="dropdown-item" href="spapackages.html" >Spa Packages</a></li>
+      </ul>
+  </li>
+</ul>
+  </div> <!-- navbar-collapse.// -->
+</nav>
+
+
     <div class="hotelvideo">
       <div class="caption">
          <span class="heading" style="background-color:transparent;color:#d2a679;">Old Mill<br>Toronto</span><span style="display:block; border: 2px double #1a0d00;border-bottom-style: none;border-right-style: none;border-left-style: none;color:#d2a679;">Your Place for a Great Experience</span>
